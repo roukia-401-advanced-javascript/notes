@@ -20,7 +20,7 @@
 `http https://pokeapi.co/api/v2/pokemon`
   *You should see a JSON object representing a list of Pokemon Characters*
   
- - ***Cloud Service Providers - Netlify***
+ - ***Cloud Service Providers***
  
  1- Netlify
    - Create an account at netlify.com
@@ -33,19 +33,19 @@
 
  2- Microsoft Azure
  
-- Install the Azure CLI tools, by running this command in your terminal:
-`brew install azure-cli`
-- Confirm proper installation
-`az --version`
+  - Install the Azure CLI tools, by running this command in your terminal:
+      `brew install azure-cli`
+  - Confirm proper installation
+      `az --version`
 
 3- Amazon AWS
 
-- Install the AWS CLI tools, by running this command in your terminal:
-`brew install awscli`
-- Confirm proper installation
-`aws --version`
-- You should see output with these versions or higher:
-`aws-cli/2.0.19 Python/3.8.3 Linux/4.19.104-microsoft-standard botocore/2.0.0dev23`
+  - Install the AWS CLI tools, by running this command in your terminal:
+      `brew install awscli`
+  - Confirm proper installation
+      `aws --version`
+  - You should see output with these versions or higher:
+      `aws-cli/2.0.19 Python/3.8.3 Linux/4.19.104-microsoft-standard botocore/2.0.0dev23`
   
  - ***Mongo database***
  
@@ -53,7 +53,7 @@
   
   *Linux and Windows Users*
   
-    - Run these commands, in order, to install MongoDB. Note that for this installation
+   - Run these commands, in order, to install MongoDB. Note that for this installation
     
     `wget -qO - https://www.mongodb.org/static/pgp/server-4.2.asc | sudo apt-key add -`
     `sudo apt-get install gnupg`
@@ -61,30 +61,31 @@
     `sudo apt-get update`
     `sudo apt-get install -y mongodb-org`
     
-    - After installation completes, we’ll need to setup MongoDB as a “service” so that it can easily be restarted. Enter the following commands, in order, to set this up:
+   - After installation completes, we’ll need to setup MongoDB as a “service” so that it can easily be restarted. Enter the following commands, in order, to set this up:
     
     `sudo curl -s https://raw.githubusercontent.com/mongodb/mongo/master/debian/init.d -o /etc/init.d/mongod`
     `sudo chmod 755 /etc/init.d/mongod`
     `sudo service mongod start`
     
-    - Now, let’s make sure we can connect to the MongoDB server. Run this command:
+   - Now, let’s make sure we can connect to the MongoDB server. Run this command:
     
     `mongo`
     
-    - Type exit to return to your bash shell. MongoDB is successfully installed.
+   - Type exit to return to your bash shell. MongoDB is successfully installed.
     
-    
+   ## Installation
 
  - `npm init -y`
   - dependencies :
     - `npm install minimist`
     - `npm install mongoose`
   - devDependencies :
-  install the jest to do the test and modify the script in the pacjage.json file to be "scripts": {
+  
+  *install the jest to do the test and modify the script in the pacjage.json file to be "scripts": {
     "test": "jest --verbose --coverage"
-  },
+  },*
     - `npm install jest`
-   install supergoose to save the data of the tests in this its memory and save the supergoose directly to the devDependencies not to the dependencies*** 
+   *install supergoose to save the data of the tests in this its memory and save the supergoose directly to the devDependencies not to the dependencies*
     - `npm install --save-dev @code-fellows/supergoose`
 
 
