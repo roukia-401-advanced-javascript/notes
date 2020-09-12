@@ -36,3 +36,7 @@ commands:
     ***to install supergoose and save it directly to the devdependancies not to the depndancies*** 
     - npm install --save-dev @code-fellows/supergoose
 
+UML
+![UML](/assets/uml.jpg)
+
+
