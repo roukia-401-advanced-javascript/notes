@@ -77,15 +77,20 @@
 
  - `npm init -y`
   - dependencies :
+  
     - `npm install minimist`
     - `npm install mongoose`
+    
   - devDependencies :
   
   *install the jest to do the test and modify the script in the pacjage.json file to be "scripts": {
     "test": "jest --verbose --coverage"
   },*
+  
     - `npm install jest`
+    
    *install supergoose to save the data of the tests in this its memory and save the supergoose directly to the devDependencies not to the dependencies*
+   
     - `npm install --save-dev @code-fellows/supergoose`
 
 
